@@ -1,0 +1,292 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+\usepackage[sfdefault]{tgadventor}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+% \addtolength{\oddsidemargin}{-0.6in}
+% \addtolength{\evensidemargin}{-0.5in}
+% \addtolength{\textwidth}{1.19in}
+% \addtolength{\topmargin}{-.7in}
+% \addtolength{\textheight}{1.4in}
+\usepackage[margin=0.5in]{geometry}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{{\Large Shawn Khandia}} & Email : \href{mailto:shawnk1004@gmail.com}{shawnk1004@gmail.com}\\
+%   \href{}{} & Mobile : (336)-493-8064 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Shawn Khandia} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height} \faMapPin\ Greensboro, NC ~ \faPhone\ (336)-493-8064 ~ \href{mailto:shawnk1004@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{shawnk1004@gmail.com}} ~ 
+    \href{https://linkedin.com/in/shawnkhandia/}{\raisebox{-0.2\height}\faLinkedin\ \underline{/in/shawnkhandia}}  ~
+    \href{https://github.com/shawnk04}{\raisebox{-0.2\height}\faGithub\ \underline{/shawnk04}}
+    \vspace{-12pt}
+\end{center}
+
+
+% Edit the job title as needed, maybe add company name for extra pizazz
+%-----------OBJECTIVE-----------
+\section{Objective}
+      \small{Soon-to-be new graduate in Computer Science at UNC Chapel Hill seeking a full-time software engineer position. Experienced in web development and scripting, with a burning interest in data science, gained from past projects and work. Looking to apply my current knowledge and grow as a programmer and as part of a team of equally passionate developers.}
+\vspace{-10pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {{University of North Carolina at Chapel Hill} $|$ \emph{Chapel Hill, NC }}{Aug. 2020 -- Dec. 2023 (Projected)}
+      {Bachelor of Science in Computer Science, Minor in Data Science}
+      {GPA: 3.873/4.0}
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    \vspace{-2pt}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Data Structures
+                \item Discrete Structures
+                \item Systems Fundamentals
+                \item Computer Organization
+                \item Foundations of Programming
+                \item Modern Web Programming
+                \item Foundations of Software Engineering
+                % \item Models of Language and Computation
+                \item Operating Systems
+                \item Algorithms and Analysis
+                \item Foundations of Data Science
+                \item Data Science in the Business World
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \vspace{-2pt}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python (3+ years), Java (3+ years), C (2+ years), HTML/CSS (1+ years), JavaScript/TypeScript (1+ years), SQL (\url{~1} year)} \\
+     \textbf{Developer Tools/Technologies}{: VS Code, IntelliJ, Docker, OpenShift, Git, GitHub, PostgreSQL, SQLAlchemy} \\
+     \textbf{Libraries/Frameworks}{: React, Angular, FastAPI, JUnit} \\
+     \textbf{Data Science Tools/Libraries}{: Jupyter Notebooks, scikit-learn, pandas, NumPy, Matplotlib} \\
+    }}
+ \end{itemize}
+\vspace{-20pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {University of North Carolina at Chapel Hill}{Jan. - May 2023, Sept. 2023 - Present}
+      {OASIS OWS IT Support Technician}{Chapel Hill, NC}
+      \resumeItemListStart
+        \resumeItem{Manage university owned hardware and supplies and perform necessary maintenance and inventory checks}
+        \resumeItem{Aid in technology related issues (e.g., reimaging computers) across departments and maintain detailed documentation}
+      \resumeItemListEnd
+      % \vspace{-3pt}
+
+      \resumeSubheading
+      {Cisco Systems}{May - Aug. 2023}
+      {Software Engineering Consultant Intern}{Raleigh, NC}
+      \resumeItemListStart
+        \resumeItem{Wrote an autonomous Python script to assess company's Jira server response times and report any noteworthy delays using Jira and Webex APIs}
+        \resumeItem{Discovered a way to store client data files within Jira server for automation use, cutting out unnecessary meetings}
+        \resumeItem{Trained and evaluated various machine learning models in predicting possible incidents in Cisco-led network changes}
+        \resumeItem{Projects estimated to have saved \$16,000-\$24,000+ annually}
+      \resumeItemListEnd
+      % \vspace{-3pt}
+
+      \resumeSubheading
+      {University of North Carolina at Chapel Hill}{June - Aug. 2022}
+      {Undergraduate Security Researcher (UNC-Intel REU)}{Chapel Hill, NC}
+      \resumeItemListStart
+        \resumeItem{Worked with mentor to install/debug newly published research key-value store codebase, Tweezer}
+        \resumeItem{Ran benchmarks to collect Tweezer efficiency data running on a given Ubuntu system to be used in mentor’s research}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+          {\textbf{UNC CSXL Clubs Platform} $|$ \emph{TypeScript, Python, React, Angular, FastAPI, SQLAlchemy, OpenShift}}{April - May 2023}
+          \resumeItemListStart
+            \resumeItem{As part of Foundations of Software Engineering class, worked alongside 3 peers to develop a student organizations feature for UNC's CSXL website: implemented CRUD operations for student clubs given different user needs}
+            \resumeItem{PostgreSQL database connected to REST API endpoints (implementing CRUD operations) using SQLAlchemy ORM}
+            \vspace{-12pt}
+            \resumeItem{Frontend created with React and Angular (TypeScript/HTML/CSS) and was deployed via Red Hat OpenShift}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+        \resumeProjectHeading
+          {\textbf{Tar Heel Shell} $|$ \emph{C, C Standard Library}}{Aug. - Sept. 2022}
+          \resumeItemListStart
+            \resumeItem{Developed in C the basic functionality of a Linux shell/CLI as part of Operating Systems class}
+            \resumeItem{Implemented built-in commands (i.e., cd), pipe, and ability to run defined Bash script files}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+        \resumeProjectHeading
+          {\textbf{COVID-19 Data Dashboard} $|$ \emph{JavaScript, ReactJS, HTML/CSS, Google Firebase/Firestore}}{March - May 2022}
+          \resumeItemListStart
+            \resumeItem{Alongside 4 classmates in Web Development class, developed a website displaying live COVID-19 data (deaths, new cases) from the open source disease.sh API}
+            \resumeItem{Frontend developed with JavaScript, ReactJS, HTML, and CSS; user authentication using Google Firebase/Firestore}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+        \resumeProjectHeading
+          {\textbf{Nonogram Puzzle Application} $|$ \emph{Java, JavaFX}}{Nov. - Dec. 2021}
+          \resumeItemListStart
+            \resumeItem{Developed an executable application for handling custom user-defined nonogram puzzles, allowing for puzzles to be visualized, solved, reset, and switched while saving the state of each puzzle}
+            \resumeItem{Developed using Java and the JavaFX library for implementing the GUI}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+        % Kinda old so excluding it
+        % \resumeProjectHeading
+        %   {\textbf{Stock Trading Bot} $|$ \emph{Python, TD Ameritrade API}}{July 2021 - Sept. 2021}
+        %   \resumeItemListStart
+        %     \resumeItem{Worked alongside 2 peers to develop an autonomous Python script to execute trades based on a user-inputted strategy}
+        %     \resumeItem{Bot utilizes the TD Ameritrade API to retrieve and analyze live stock market data}
+        %   \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+% Extracurriculars section, don't really need?
+%-----------INVOLVEMENT---------------
+% \section{Leadership / Extracurricular}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+%             \resumeItemListStart
+%                 \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+%                 \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+%                 \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+%             \resumeItemListEnd
+        
+%     \resumeSubHeadingListEnd
+
+\end{document}
